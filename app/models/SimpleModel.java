@@ -13,7 +13,7 @@ public class SimpleModel extends Model {
 
     public String name;
 
-    public static Finder<Long, SimpleModel> find = new Finder(Long.class, SimpleModel.class);
+    private static Finder<Long, SimpleModel> find = new Finder(Long.class, SimpleModel.class);
 
     public static SimpleModel findById(Long id) {
         return find.byId(id);
